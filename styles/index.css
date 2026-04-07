@@ -6,11 +6,12 @@
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper {}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text p {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text p span {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text h1 {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text h1+p {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text h1+p em {}
+#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text .text_title {}
+#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text .text_title p {}
+#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text .text_title p span {}
+#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text .text_title h1 {}
+#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text > p {}
+#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text > p em {}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .slide1 {}
 #wrap main #hero_bnr .hero_swiper .swiper-wrapper .slide2 {}
 #wrap main #hero_bnr .hero_swiper .prev {}
