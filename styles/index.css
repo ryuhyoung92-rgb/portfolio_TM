@@ -2,35 +2,60 @@
 /* ===========================================================================1. hero_bnr */
 #wrap main {}
 #wrap main #hero_bnr {}
-#wrap main #hero_bnr .hero_swiper {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text .text_title {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text .text_title p {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text .text_title p span {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text .text_title h1 {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text > p {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .swiper-slide .text > p em {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .slide1 {}
-#wrap main #hero_bnr .hero_swiper .swiper-wrapper .slide2 {}
-#wrap main #hero_bnr .hero_swiper .prev {}
-#wrap main #hero_bnr .hero_swiper .next {}
-#wrap main #hero_bnr .hero_swiper .pagi_bar {}
-#wrap main #hero_bnr .hero_swiper .pagi_bar .pagi {}
-#wrap main #hero_bnr .hero_swiper .pagi_bar .bar_bg {}
-#wrap main #hero_bnr .hero_swiper .pagi_bar .bar_bg .bar {}
+#wrap main #hero_bnr .hero_swiper_wrap {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p span {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p em {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {}
+#wrap main #hero_bnr .hero_swiper_wrap .prev {}
+#wrap main #hero_bnr .hero_swiper_wrap .next {}
+#wrap main #hero_bnr .hero_swiper_wrap .pagi_bar {}
+#wrap main #hero_bnr .hero_swiper_wrap .pagi_bar .pagi {}
+#wrap main #hero_bnr .hero_swiper_wrap .pagi_bar .bar_bg {}
+#wrap main #hero_bnr .hero_swiper_wrap .pagi_bar .bar_bg .bar {}
 /* ===========================================================================2. best_seller */
 #wrap main .best_seller {}
 #wrap main .best_seller .title {}
 #wrap main .best_seller .title h1 {}
 #wrap main .best_seller .title .list {}
-#wrap main .best_seller .title .list li {}
-#wrap main .best_seller .title .list li a {}
-#wrap main .best_seller .title .list li a.active {}
+#wrap main .best_seller .title .list a {}
+#wrap main .best_seller .title .list a.active {}
 #wrap main .best_seller .more {}
 #wrap main .best_seller .more img {}
 #wrap main .best_seller .best_list {}
+#wrap main .best_seller .best_list {}
+#wrap main .best_seller .best_list .base_swiper {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide > a {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide > a img {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide .contents {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide .contents h2 {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide .contents .price_info {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide .contents .price_info .discount {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide .contents .price_info .price {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide .contents .price_info del {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide .contents .grade {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .swiper-slide .contents .grade img {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .slide1 {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .slide2 {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .slide3 {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .slide4 {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .slide5 {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .slide6 {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .slide7 {}
+#wrap main .best_seller .best_list .base_swiper .swiper-wrapper .slide8 {}
+
+
+
 #wrap main .best_seller .best_list .swiper-wrapper {}
 #wrap main .best_seller .best_list .swiper-wrapper .swiper-slide {}
 #wrap main .best_seller .best_list .swiper-wrapper .swiper-slide .photo {}
