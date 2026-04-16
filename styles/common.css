@@ -20,7 +20,7 @@
 #wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr .top_bnr_close {}
 #wrap header #top_bnr_wrap .swiper-wrapper .swiper-slide .top_bnr .top_bnr_close img {}
 #wrap header .all_menu {
-    height:55px; background-color:aqua; padding:0 80px;
+    height:55px; /* background-color:aqua; */ padding:0 80px;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; align-items:center;
     position:relative;
@@ -30,9 +30,8 @@
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; align-items:center;
 }
-#wrap header .all_menu nav #gnb li {}
-#wrap header .all_menu nav #gnb li a {padding:0 15px; height:100%;}
-#wrap header .all_menu nav #gnb li a img {}
+#wrap header .all_menu nav #gnb a {padding:20.5px 15px;}
+#wrap header .all_menu nav #gnb a img {height:100%;}
 #wrap header .all_menu h1 {height:100%; line-height:100%;}
 #wrap header .all_menu h1 a {
     width:130px; position:absolute;
@@ -77,27 +76,29 @@
 }
 #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents {}
 #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .contents_title {
-    display:flex; justify-content:space-between;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; margin-bottom:30px;
 }
-#wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .contents_title h2 {
-    color:#333; font-weight:500; margin-bottom:30px;
-}
+#wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents > h2 {margin-bottom:30px;}
+#wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents > h2,
+#wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .contents_title h2 {color:#333; font-weight:500;}
 #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .contents_title .color {
-    display:flex; gap:7px; justify-content:center; align-items:center;
+    display:flex; gap:7px;
 }
 #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .contents_title .color span {
     display:inline-block; width:10px; height:10px; border-radius:10px; background:#888;
 }
 #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .contents_title .color > p {
-    color:#333; font-weight:300; font-size:0.75rem;}
-
+    color:#333; font-weight:300; font-size:0.75rem;
+}
 #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .price_info {
     display:flex; gap:8px; margin-bottom:10px;
 }
 #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .price_info .discount {
     color:#FF6E86; font-weight:500; font-size:0.94rem;
 }
-#wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .price_info .price {color:#333; font-size:0.94rem;}
+#wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .price_info .price {
+    color:#333; font-size:0.94rem;
+}
 #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .price_info del {
     color:#888; font-weight:300; font-size:0.75rem;
 }
