@@ -149,9 +149,9 @@
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; gap:30px;
     padding:180px 80px 0;
 }
-#wrap main .new_item > p {}
-#wrap main .new_item > p > img {
-    width:100%; height:auto;
+#wrap main .new_item > p {
+    background-image:url(../images/product/new_item/new_left_bnr.png);
+    background-position:center; background-size:contain;
 }
 #wrap main .new_item .new_container {width:50%;}
 #wrap main .new_item .new_container .new_info {}

@@ -15,9 +15,9 @@ console.log(productSwiper);
 // index 제품 스와이퍼 JS
 function initSwiper(target){
     return new Swiper(target, {
-        slidesPerView:'auto',
+        slidesPerView:4,
         spaceBetween:30,
-        slidesPerGroup:4,
+        slidesPerGroup:1,
         pagination:{
             el:'.list_container .swiper .swiper-pagination',
         },
@@ -26,6 +26,18 @@ function initSwiper(target){
             prevEl:'.swiper .control_bar .prev',
             nextEl:'.swiper .control_bar .next',
         },
+        breakpoints:{
+            320:{
+                slidesPerView:2,
+            },
+            402:{
+                slidesPerView:3, //402 이상일때
+                spaceBetween:20,
+            },
+            1028:{
+                slidesPerView:4, //1028 이상일때
+            },
+        }
     }
     )};
 

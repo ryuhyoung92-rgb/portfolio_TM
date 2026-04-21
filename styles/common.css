@@ -1,19 +1,20 @@
 /* common.css */
 /* ===========================================================================header */
 #wrap {
-    max-width:1920px; min-width:1028px; height:100vh;
-    margin:0 auto;
+    min-width:320px; margin:0 auto;
 }
 #wrap header {width:100%; position:relative;}
 #wrap header #top_bnr {
-    background-color:#333; height:40px;
+    background-color:#333; height:40px; position:relative;
 }
 #wrap header #top_bnr .top_bnr_contents {}
 #wrap header #top_bnr .top_bnr_contents p {
     font-size:0.75rem; color:#fff; font-weight:500; margin:0; text-align:center; line-height:40px;
 }
-#wrap header #top_bnr .top_bnr_close {}
-#wrap header #top_bnr_close img {}
+#wrap header #top_bnr .top_bnr_close {
+    position:absolute; right:0; top:50%; transform:translateY(-50%); width:24px;
+}
+#wrap header #top_bnr #top_bnr_close img {width:100%;}
 #wrap header .all_menu {
     height:55px; background-color:#fff; padding:0 80px;
     display:flex; flex-flow:row nowrap;
@@ -26,6 +27,7 @@
     justify-content:space-between; align-items:center;
 }
 #wrap header .all_menu nav #gnb a {padding:20.5px 15px;}
+#wrap header .all_menu nav #gnb a:last-child {color:#FF6E86;}
 #wrap header .all_menu nav #gnb a img {height:100%;}
 #wrap header .all_menu h1 {height:100%; line-height:100%;}
 #wrap header .all_menu h1 a {
