@@ -1,3 +1,5 @@
+**"This is a portfolio project for educational purposes."**
+* 이것은 교육 목적의 포트폴리오 프로젝트입니다.
 # TONYMORY 홈페이지 리디지인
 ## 작업 기록(2026.03.27 ~)
 `2026.03.27`
