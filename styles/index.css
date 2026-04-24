@@ -151,9 +151,10 @@
 }
 #wrap main .new_item > p {
     background-image:url(../images/product/new_item/new_left_bnr.png);
-    background-position:center; background-size:contain;
+    background-position:center; background-size:cover;
+    width:calc((100% - 30px) / 2); height:909px;
 }
-#wrap main .new_item .new_container {width:50%;}
+#wrap main .new_item .new_container {}
 #wrap main .new_item .new_container .new_info {}
 #wrap main .new_item .new_container .new_info h1,
 #wrap main .new_item .new_container .new_info h1 span {font-family: "Fredoka", sans-serif; color:#333;}
@@ -242,14 +243,22 @@
 }
 #wrap main .boncept .boncept_bnr .title {padding:145.5px 0 145.5px 350px;}
 #wrap main .boncept .boncept_bnr .title h1 {color:#fff; font-size:2.50rem; margin-bottom:15px;}
-#wrap main .boncept .boncept_bnr .title p {color:#FFCDCF; font-size:1.38rem;}
+#wrap main .boncept .boncept_bnr .title p {
+    display:inline-block; color:#FFCDCF; font-size:1.38rem; margin-right:5px;
+}
+#wrap main .boncept .boncept_bnr .title p:last-child {margin-right:0;}
 
 /* ===========================================================================5. monthlyTONY. */
 #wrap main .magazine_wrap {
     display:flex; padding:0 0 0 80px;
 }
 #wrap main .magazine_wrap .monthly_tony {
-    display:flex; flex-flow:column nowrap; width:auto;
+    display:grid; align-items:start;
+    grid-template-columns:0.24fr 0.43fr 0.32fr;
+    grid-template-areas:
+        'title tonycover product'
+        'list tonycover product';
+    grid-auto-rows:auto auto;
 }
 #wrap main .magazine_wrap .monthly_tony h1,
 #wrap main .magazine_wrap .monthly_tony h1 span {
@@ -257,12 +266,14 @@
 }
 #wrap main .magazine_wrap .monthly_tony h1 {
     padding:94.5px 71.5px; font-weight:300; font-size:2.188rem;
+    grid-area:title; height: fit-content;
 }
 #wrap main .magazine_wrap .monthly_tony h1 span {
     font-weight:500; font-size:3.125rem; padding-left:5px;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap {
     display:flex; flex-flow:column nowrap;
+    grid-area:list; height: fit-content;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap .magazine_list {}
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li {
@@ -297,41 +308,53 @@
     color:#333;
 }
 #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title img {height:100%}
-#wrap main .magazine_wrap .magazine {
+/* #wrap main .magazine_wrap .monthly_tony .magazine_bg {
     display:flex; flex-flow:row nowrap; gap:40px;
     padding:60px 60px 0 80px; background-color:#f5f5f5;
     width:calc(100% - 450px);
+} */
+#wrap main .magazine_wrap .monthly_tony .magazine_bg {
+    padding:60px 40px 0 60px; background-color:#f5f5f5;
+    grid-area:tonycover; width:100%; max-width:700px;
 }
-#wrap main .magazine_wrap .magazine > img {height:100%;}
+#wrap main .magazine_wrap .monthly_tony .magazine_bg > p {}
+#wrap main .magazine_wrap .monthly_tony .magazine_bg .magazine_active {
+    background:url(../images/product/monthly_TONY/monthly2603.png);
+    background-position:center; background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+}
 #wrap main .magazine_wrap .magazine .magazine_container {
-    display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:flex-start;
+    display:flex; flex-flow:column nowrap; justify-content:space-between; 
+    align-items:flex-start; background-color:#f5f5f5;
+    grid-area:product;
 }
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product {
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product {
     display:flex; flex-flow:row nowrap; justify-content:center; align-items:center; gap:20px;
 }
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .photo {}
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .photo img {}
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents {}
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents h2 {
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .photo {}
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .photo img {}
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents {}
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents h2 {
     color:#333; font-weight:500; margin-bottom:30px;
 }
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .price_info {
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info {
     display:flex; flex-flow:row nowrap; gap:8px; margin-bottom:10px;
 }
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .price_info .discount {
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info .discount {
     color:#FF6E86; font-size:0.938rem; font-weight:500;
 }
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .price_info .price {
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info .price {
     color:#333; font-size:0.938rem;
 }
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .price_info del {
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info del {
     color:#888; font-size:0.75rem; font-weight:300;
 }
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .grade {
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .grade {
     display:flex; align-items:center; height:14px;
 }
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .grade img {height:100%;}
-#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .grade p {
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .grade img {height:100%;}
+#wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .grade p {
     color:#333; font-size:0.75rem; font-weight:300;
 }
 /* ===========================================================================6. brand store */
