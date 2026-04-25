@@ -51,6 +51,23 @@
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .next svg {display:none;}
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar {}
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi {
+    display:flex; padding:12px 55px; 
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet {
+    width:50%; height:1px; background:#d9d9d9; margin:0; opacity:1;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet-active {
+    width:50%; height:1px; background:#888 !important;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi::before {
+    content: ''; display:block; position:absolute; left:50%; bottom:20px;
+    transform:translateX(-50%); z-index:200;
+    width: 120px;
+    height: 1px;
+    background: rgba(255,255,255);
+}
+
+/* #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi {
     display:flex; padding:12px 55px; position:relative;
 }
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-total::before {
@@ -60,8 +77,20 @@
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-current::after {
     content:''; display:block; position:absolute; left:50%; bottom:50%; transform:translate(-50%, -50%); z-index:50;
     width:82px; height:1px; background:#fff !important;
-}
+} */
 /* #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet {
+    width:50%; height:1px; background:#d9d9d9; margin:0; opacity:1;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet-active {
+    width:50%; height:1px; background:#888 !important;
+} */
+/* #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .bar_bg {}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .bar_bg .bar {}
+
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi {
+    display:flex; padding:12px 55px; 
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet {
     width:50%; height:1px; background:#d9d9d9; margin:0; opacity:1;
 }
 #wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet-active {

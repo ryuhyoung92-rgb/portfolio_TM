@@ -1,0 +1,26 @@
+/* color_chip */
+/* ===================================================== makeup swiper color */
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide1 .contents .contents_title .color span:nth-child(1) {background:#E6442E;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide1 .contents .contents_title .color span:nth-child(2) {background:#E40520;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide1 .contents .contents_title .color span:nth-child(3) {background:#E6302D;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide2 .contents .contents_title .color span:nth-child(1) {background:#DC848E;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide2 .contents .contents_title .color span:nth-child(2) {background:#B65A4B;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide2 .contents .contents_title .color span:nth-child(3) {background:#8C4A5D;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide3 .contents .contents_title .color span:nth-child(1) {background:#C46250;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide3 .contents .contents_title .color span:nth-child(2) {background:#BB5657;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide3 .contents .contents_title .color span:nth-child(3) {background:#A53235;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide4 .contents .contents_title .color span:nth-child(1) {background:#F77793;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide4 .contents .contents_title .color span:nth-child(2) {background:#E12030;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide4 .contents .contents_title .color span:nth-child(3) {background:#DF6366;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide5 .contents .contents_title .color span:nth-child(1) {background:#F89AA1;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide5 .contents .contents_title .color span:nth-child(2) {background:#F18183;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide5 .contents .contents_title .color span:nth-child(3) {background:#D8826B;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide6 .contents .contents_title .color span:nth-child(1) {background:#F1E2D5;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide6 .contents .contents_title .color span:nth-child(2) {background:#EEE3D0;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide6 .contents .contents_title .color span:nth-child(3) {background:#E6D2B7;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide7 .contents .contents_title .color span:nth-child(1) {background:#D9C2A7;}
+#wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide7 .contents .contents_title .color span:nth-child(2) {background:#D0B49B;}
+/* ===================================================== new-item swiper color */
+#wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color span:nth-child(1) {background-image:url(../images/product/new_item/span1.png);}
+#wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color span:nth-child(2) {background-image:url(../images/product/new_item/span2.png);}
+#wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color span:nth-child(3) {background-image:url(../images/product/new_item/span3.png);}

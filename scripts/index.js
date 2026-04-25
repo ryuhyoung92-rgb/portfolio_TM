@@ -16,8 +16,10 @@ const mainSwiper = new Swiper(heroBnrSwiper, {
     loop:true,
     
     pagination:{
-        el:'#hero_bnr .control_bar .swiper-pagination',
-        type:'fraction',
+        el:'.hero_swiper_wrap .pagi',
+        // renderBullet:function(index, className){
+        //     return `<span class="${className}" > 0${index + 1}</span>`;
+        // },
         },
     navigation:{
         prevEl:'#hero_bnr .control_bar .prev',

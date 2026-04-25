@@ -35,7 +35,6 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap header .all_menu nav #gnb li {}
 #wrap header .all_menu nav #gnb li a {display:inline-block; padding:0 15px; line-height:55px;}
 #wrap header .all_menu nav #gnb li a:hover {border-bottom:2px solid #333;}
-#wrap header .all_menu nav #gnb li:first-child a {line-height:0;}
 #wrap header .all_menu nav #gnb li:first-child a:hover {border-bottom:0px solid #333;}
 #wrap header .all_menu nav #gnb li:last-child a:hover {border-bottom:2px solid #FF6E86;}
 #wrap header .all_menu nav #gnb li:last-child a {color:#FF6E86;}
