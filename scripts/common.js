@@ -30,6 +30,7 @@ function initSwiper(target){
         breakpoints:{
             320:{
                 slidesPerView:2,
+                spaceBetween:15,
                 slidesPerGroup:2,
             },
             402:{
@@ -39,6 +40,8 @@ function initSwiper(target){
             },
             1028:{
                 slidesPerView:4, //1028 이상일때
+                spaceBetween:30,
+                slidesPerGroup:4,
             },
         }
     }

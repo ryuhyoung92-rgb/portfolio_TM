@@ -2,8 +2,8 @@
 /* mobile(402~) -> tablet(1028~) -> desktop(1920~) */
 @media screen and (max-width:1028px) {
     /* ===========================================================================0. header */
-    #wrap header .all_menu nav #gnb a {display:none;}
-    #wrap header .all_menu nav #gnb a:first-child {display:block;}
+    #wrap header .all_menu nav #gnb li {display:none;}
+    #wrap header .all_menu nav #gnb li:first-child {display:block;}
     /* ===========================================================================1. hero_bnr */
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {
         padding:288px 0 288px 122px;
@@ -164,12 +164,164 @@
     }
     #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; flex-flow:column wrap; gap:10px; position:relative;}
     /* ===========================================================================공통 container */
-    #wrap main .container {padding:80px 80px 0;}
-    #wrap main .container .list_container .swiper .swiper-wrapper {
-    width:calc((100% - 40px) / 3);
-    }
-    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .photo {height:350px;}
+    #wrap main .container {padding:80px 15px 0;}
+    #wrap main .container .title h1 {font-size:1.5rem;}
+    #wrap main .container .title .list a {font-size:0.75rem;}
+    #wrap main .container .title .list a.active {font-size:0.88rem;}
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide {width:calc((100% - 15px) / 2);}
+    #wrap main .container .list_container .swiper .swiper-wrapper {margin-bottom:60px;}
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .photo {height:230px;}
     #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .photo img {
-    height:100%; margin-bottom:20px;
+    height:100%; margin-bottom:15px;
     }
+    #wrap main .container .more {font-size:0.63rem; height:10px;}
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents > h2 {margin-bottom:25px;}
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents h2,
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .contents_title h2,
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .price_info .discount,
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .price_info .price {font-size:0.75rem;}
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .price_info del,
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .contents_title .color > p,
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .grade p {font-size:0.68rem;}
+    #wrap main .container .list_container .swiper .swiper-wrapper .swiper-slide .contents .grade {width:10px;}
+    #wrap main .container .list_container .swiper .control_bar .prev,
+    #wrap main .container .list_container .swiper .control_bar .next {width:16px; height:16px;}
+    /* ===========================================================================3. new_item */
+    #wrap main .new_item {
+        display:flex; flex-flow:column nowrap;
+        gap:30px; padding:80px 0 0 0;
+    }
+    #wrap main .new_item > p {
+    background-image:url(../images/mobile/new_item_bnr_moblie.png); width:100%; height:230px; margin-bottom:20px;
+    }
+    #wrap main .new_item .new_container .new_info {
+        display:flex; flex-flow:column nowrap;
+        align-items:center;
+    }
+    #wrap main .new_item .new_container .new_info h1 {font-size:1.38rem; text-align:center;}
+    #wrap main .new_item .new_container .new_info h1 span {font-size:1.56rem;}
+    #wrap main .new_item .new_container .new_info .new_detail {flex-flow:column nowrap; align-items:flex-end; padding:20px 0;}
+    #wrap main .new_item .new_container .new_info .new_detail p {
+        font-size:0.75rem; margin-bottom:50px;
+        text-align:center;
+    }
+    #wrap main .new_item .new_container .new_list {
+        padding:0 15px; gap:15px;
+    }
+    #wrap main .new_item .new_container .new_list .new_contents {padding-bottom:20px;}
+    #wrap main .new_item .new_container .new_list .new_contents .photo {width:266px;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents > h2 {font-size:0.75rem; margin-bottom:25px;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents .contents_title h2,
+    #wrap main .new_item .new_container .new_list .new_contents .contents .price_info .discount,
+    #wrap main .new_item .new_container .new_list .new_contents .contents .price_info .price {font-size:0.75rem;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents .price_info del {
+    font-size:0.63rem;
+}
+    #wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color {gap:4px;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color span {
+        width:8px; height:8px; border-radius:8px; background:#888;
+    }
+    #wrap main .new_item .new_container .new_list .new_contents .contents .contents_title .color p {font-size:0.5rem;}
+    #wrap main .new_item .new_container .new_list .new_contents .contents .grade {width:10px;}
+    /* ===========================================================================4. boncept */
+    #wrap main .boncept {padding:80px 0;}
+    #wrap main .boncept .boncept_bnr {
+        background-image:url(../images/mobile/boncept_bnr_mobile.png);
+    }
+    #wrap main .boncept .boncept_bnr .title::before {
+        width:120px; height:120px;
+        background-position:center; background-size:cover;
+        left:53px;
+    }
+    #wrap main .boncept .boncept_bnr .title {padding:63.5px 0 63.5px 35px;}
+    #wrap main .boncept .boncept_bnr .title p {display:block; margin-bottom:8px; text-align:center;}
+    #wrap main .boncept .boncept_bnr .title p:last-child {margin-bottom:0;}
+    #wrap main .boncept .boncept_bnr .title h1 {font-size:1.5rem;}
+    #wrap main .boncept .boncept_bnr .title p {font-size:0.88rem;}
+    #wrap main .boncept .more {padding:0 15px;}
+    #wrap main .boncept .boncept_list {padding:0 15px;}
+    /* ===========================================================================5. monthlyTONY. */
+    #wrap main .magazine_wrap {padding:0 0 0 0;}
+    #wrap main .magazine_wrap .monthly_tony {
+        display:flex; flex-flow:column nowrap;
+        align-items:center;
+    }
+    #wrap main .magazine_wrap .monthly_tony h1 {font-size:1.25rem; padding:0 0 30px;}
+    #wrap main .magazine_wrap .monthly_tony h1 span {font-size:2.19rem;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap {padding:0; width:100%;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li {display:none;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active {display:block;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title img {height:100%}
+    #wrap main .magazine_wrap .monthly_tony .magazine_bg {padding:0;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_bg .magazine_active {
+        background:url(../images/mobile/monthly_tony_2603_mobile.png);
+        max-width:402px; height:484px;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_container {
+        flex-flow:column nowrap; padding:20px 30px 0 30px; width:100%;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product {
+        flex-flow:row nowrap; align-items:center;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .photo {width:100px;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .photo img {width:100%;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents h2 {margin-bottom:25px;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents h2,
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info .discount,
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info .price {font-size:0.75rem;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info {
+        display:flex; flex-flow:row nowrap; gap:8px; margin-bottom:10px;
+    }
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .price_info del {font-size:0.68rem;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .grade {height:10px;}
+    #wrap main .magazine_wrap .monthly_tony .magazine_container .magazine_product .contents .grade p {font-size:0.68rem;}
+    /* ===========================================================================6. brand store */
+    #wrap main .brand_store {padding:80px 30px 50px;}
+    #wrap main .brand_store .title {margin-bottom:30px;}
+    #wrap main .brand_store .store_search_wrap {
+        flex-flow:column nowrap;}
+    #wrap main .brand_store .store_search_wrap .store_map {
+        background-image:url(../images/mobile/brand_store_mobile.png);
+        width:342px; height:300px;
+    }
+    #wrap main .brand_store .store_search_wrap #store_search_form {flex:350;}
+    #store_search_form .tab_area .tab,
+    #store_search_form .search_area_wrap .filter_area .search_result,
+    #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address h2 {font-size:0.88rem;}
+    #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_number,
+    #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address > p {font-size:0.75rem;}
+    #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address > p {margin-bottom:20px;}
+    #wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search {
+        padding:20px 15px; font-size:0.75rem;
+    }
+    #wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list {padding:20px; gap:55px;}
+    /* ===========================================================================footer */
+    #wrap footer .footer_top {padding:15px;
+    display:flex; flex-flow:column nowrap; gap:15px; justify-content:center;}
+    #wrap footer .footer_top .fnb {font-size:0.68rem; gap:20px; padding:0;}
+    #wrap footer .footer_top .footer_sns {gap:15px;}
+    #wrap footer .footer_top .footer_sns a {height:20px;}
+    #wrap footer .footer_bottom {flex-flow:column nowrap; padding:30px; gap:20px;}
+    #wrap footer .footer_bottom .footer_left {padding-left:0; text-align:center;}
+    #wrap footer .footer_bottom .footer_left h1 {margin-bottom:15px;}
+    #wrap footer .footer_bottom .footer_left address span,
+    #wrap footer .footer_bottom .footer_right p span {margin:0 5px;}
+    #wrap footer .footer_bottom .footer_left > p:last-child {margin-top:20px;}
+    #wrap footer .footer_bottom .footer_left h1,
+    #wrap footer .footer_bottom .footer_right h2 {font-size:0.75rem;}
+    #wrap footer .footer_bottom .footer_left address span,
+    #wrap footer .footer_bottom .footer_right p span {height:5px;}
+    #wrap footer .footer_bottom .footer_left address,
+    #wrap footer .footer_bottom .footer_left address a,
+    #wrap footer .footer_bottom .footer_left p,
+    #wrap footer .footer_bottom .footer_left p a,
+    #wrap footer .footer_bottom .footer_right p,
+    #wrap footer .footer_bottom .footer_right .cs_btn a {font-size:0.56rem;}
+    #wrap footer .footer_bottom .footer_right {text-align:center;}
+    #wrap footer .footer_bottom .footer_right .cs_btn {justify-content:center;}
+    #wrap footer .footer_bottom .footer_right .cs_number {font-size:1rem;}
+    #wrap footer .footer_bottom .footer_right .cs_time {margin-bottom:6px;}
+    #wrap footer .footer_bottom .footer_right h2,
+    #wrap footer .footer_bottom .footer_right .cs_number {display:inline-block; vertical-align:middle;
+    line-height:16px;}
 }

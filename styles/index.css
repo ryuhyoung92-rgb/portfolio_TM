@@ -159,7 +159,7 @@
 #wrap main .new_item .new_container .new_info h1,
 #wrap main .new_item .new_container .new_info h1 span {font-family: "Fredoka", sans-serif; color:#333;}
 #wrap main .new_item .new_container .new_info h1 {
-    font-weight:300; font-size:2.50rem; margin-bottom:56px;
+    font-weight:300; font-size:2.50rem; margin-bottom:56px; line-height:1.25;
 }
 #wrap main .new_item .new_container .new_info h1 span {
     font-weight:400; font-size:2.81rem; line-height:1.25;
